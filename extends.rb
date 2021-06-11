@@ -8,6 +8,11 @@ class User < Greeting
   def initialize(name)
     @name = name
   end
+
+  def hello
+    super
+    puts "Hello, #{@name}"
+  end
 end
 
 user1 = User.new('Nabe')
